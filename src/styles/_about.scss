@@ -1,0 +1,73 @@
+@use "./breakpoint" as u;
+
+
+
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+
+  @include u.breakpoints-down(small){
+
+    font-size: 1.7rem;
+  }
+
+
+  span {
+    display: block;
+    color: #23d997;
+  }
+}
+
+.about-me {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-content: center;
+
+  @include u.breakpoints-down(medium){
+  
+    gap: 15px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .img-container{
+      text-align: center;
+      order: -1;
+      width: 50%;
+      margin-inline: auto;
+    }
+  }
+
+ 
+
+
+
+  p {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    width: 98%;
+    max-width: 500px;
+    color: #fdfff5ec;
+
+    @include u.breakpoints-down(small){
+
+     font-size: 1rem;
+    }
+  }
+}
+
+.img-container {
+  img {
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+  }
+}

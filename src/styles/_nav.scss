@@ -1,0 +1,142 @@
+@use "./breakpoint" as u;
+
+
+
+
+.nav-container {
+  padding: 1rem 0;
+  background-color: var(--nav-black);
+  width: 100vw;
+  z-index: 40;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    & > a {
+      display: block;
+      font-size: 2rem !important;
+      font-weight: 800;
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: #23d997;
+      }
+
+      span {
+        font-family: "Playwrite NL", cursive;
+        font-size: 1rem;
+        padding: 0.1rem;
+        padding-right: 0.2rem;
+        color: #23d997;
+      }
+    }
+
+    a {
+      color: #fdfff5;
+      font-size: 1.3rem;
+      @include u.breakpoints-down(medium){
+        font-size: 1rem;
+       }
+      
+    }
+  }
+}
+
+.close-btn {
+  display: none;
+  position: fixed;
+  right: 5vw;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+
+  color: #fdfff5;
+  background: black;
+
+  &:hover{
+    color: #23d997;
+  }
+
+  @include u.breakpoints-down(small){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+ 
+}
+
+.mobil-ul{
+display: none;
+@include u.breakpoints-down(small){
+  display: none;
+  position: fixed;
+  background-color: #282828;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+}
+
+ .desk-ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 700px;
+
+  @include u.breakpoints-down(small){
+    display: none;
+  }
+
+}
+
+.desk-ul,
+.mobil-ul {
+  li {
+    position: relative;
+    &:hover::after {
+      width: 100%;
+      left: 0;
+      transform: translateX(0%);
+    }
+
+    &::after {
+      content: "";
+      background-color: var(--green);
+      width: 0%;
+      position: absolute;
+      height: 3px;
+      top: 100%;
+      left: 50%;
+      transform: translateX(50%);
+      transition: all 0.5s;
+    }
+  }
+}
+
+#Tecnologia,
+#idioma,
+#proyecto,
+#logros,
+#contact {
+  padding-top: 50px !important;
+}
+
+#about {
+  padding-top: 80px !important;
+}

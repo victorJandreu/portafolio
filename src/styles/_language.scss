@@ -1,0 +1,49 @@
+@use "./breakpoint" as u;
+
+
+
+
+.language-group {
+  display: flex;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  border: 1px solid #fdfff5;
+  padding: 1.2rem;
+  margin-left: 1rem;
+  justify-content: center;
+
+  @include u.breakpoints-down(small){
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+
+    .language{
+      width: 100%;
+
+    }
+  }
+
+ 
+
+}
+
+.language {
+  width: 33%;
+  text-align: center;
+  line-height: 1.5;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+ 
+}
+  

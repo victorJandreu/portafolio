@@ -1,0 +1,160 @@
+@use "./breakpoint" as u;
+
+.proyect-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 30px;
+  margin-left: 1rem;
+
+  .mobil-image {
+    display: none;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  @include u.breakpoints-down(small) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+
+    .code {
+      top: -18px;
+      right: -10px;
+    }
+
+    .image-princi {
+      display: none;
+    }
+    .mobil-image {
+      display: block;
+    }
+  }
+
+  @media (min-width: 450px) and (max-width: 730px) {
+    .mobil-image {
+      display: none;
+    }
+    .image-princi {
+      display: block;
+    }
+  }
+
+  @media  (min-width: 740px) and (max-width: 900px) {
+    .image-princi {
+      display: none;
+    }
+    .mobil-image {
+      display: block;
+    }
+    
+}
+
+@media  (min-width: 1117px) and (max-width: 1217px) {
+  .image-princi {
+    display: none;
+  }
+  .mobil-image {
+    display: block;
+  }
+  
+}
+}
+
+.proyect {
+  background-color: #fdfff5;
+  border-radius: 20px;
+  flex-direction: column;
+  color: var(--body-black);
+  border: 5px solid transparent;
+  transition: border-color 0.4s ease-in-out;
+  position: relative;
+
+  &:hover {
+    border: 5px solid var(--green);
+  }
+
+  &:hover .image-princi,
+  &:hover .mobil-image {
+    opacity: 0.7;
+  }
+
+  .proyect-web {
+    display: block;
+    padding: 1.2rem;
+    color: var(--body-black);
+    min-height: 100%;
+
+    & > p {
+      @include u.breakpoints-down(small) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image-princi,
+  .mobil-image {
+    border-radius: 20px;
+    margin-block: 1.2rem;
+    height: 300px;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+
+.code {
+  position: absolute;
+  right: 0;
+  top: 0.2rem;
+  color: var(--body-black);
+  font-size: 1rem;
+  font-weight: 800;
+  transition: color 0.3s;
+  display: block;
+  padding: 1.2rem;
+
+  &:hover {
+    color: var(--green);
+  }
+}
+
+.fondo {
+  position: relative;
+}
+
+.proyect-tecno {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  gap: 4px;
+  background-color: rgba(255, 255, 255, 0.803);
+  margin: 0.2rem;
+  border-radius: 20px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    p {
+      font-size: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@use "tecnologias";
+@use "language";
+@use "project";
+@use "footer";
+@use "contact";
+@use "logros";
+@use "about";
+@use "nav";
+@forward "breakpoint";
+
+@use "./breakpoint" as u;
+
+:root {
+  --green: #23d997;
+  --body-black: #1b1b1b;
+  --nav-black: #282828;
+  --padding-lef-elements: 1rem;
+  --milk-white: #fdfff5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.custom-btn:focus {
+  outline: 4px solid var(--body-black) !important;
+}
+
+.custom-btn {
+  color: var(--body-black) !important;
+  font-weight: 700 !important;
+}
+
+body {
+  color: #fdfff5;
+  background: var(--body-black);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+.center {
+  width: 90vw;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-block: 3rem 2rem;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+
+  @include u.breakpoints-down(small) {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@include u.breakpoints-down(small) {
+  li {
+    font-size: 0.9rem;
+  }
+}

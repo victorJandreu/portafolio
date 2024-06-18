@@ -1,0 +1,41 @@
+@use "./breakpoint" as u;
+
+.logros {
+  ul {
+    max-width: 600px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #fdfff5;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-inline: auto;
+    width: calc(100% - 2rem);
+
+    @include u.breakpoints-down(small){
+      width: 100%;
+    }
+
+    li {
+      position: relative;
+      text-indent: 20px;
+      line-height: 1.6;
+    }
+
+    .boll {
+      display: block;
+      background-color: #23d997;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      position: absolute;
+      left: 0;
+      top: 5px;
+    }
+  }
+
+  .highlight {
+    color: #23d997;
+  }
+}
