@@ -11,6 +11,7 @@ import react from "../assets/react.svg";
 import router from "../assets/router.svg";
 import redux from "../assets/redux.svg";
 
+//gola
 export default function ProyectGroup() {
   return (
     <section className="center" id="proyecto">
