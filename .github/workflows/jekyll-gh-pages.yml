@@ -40,7 +40,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_APP_MS: ${{ secrets.VITE_APP_MS}}
+          VITE_APP_MS: ${{ secrets.VITE_APP_MS }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
