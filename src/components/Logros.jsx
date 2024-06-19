@@ -1,3 +1,5 @@
+import cvPdf from "../pdf/curriculum.pdf";
+import cvLogo from "../assets/Cv.svg";
 
 export default function Logros(){
 
@@ -34,6 +36,7 @@ export default function Logros(){
               1 año.
             </li>
           </ul>
+          <a href={cvPdf} className="cv" target="_blank">Más información en mi CV <img src={cvLogo} alt="CV" /></a>
         </section>
     )
 }

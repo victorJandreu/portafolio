@@ -38,38 +38,6 @@ footer {
   }
 }
 
-.cv {
-  color: white;
-  display: block;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-  position: relative;
-  width: fit-content;
-  margin-inline: auto;
-  gap: 5px;
-  img {
-    width: 50px;
-  }
 
-  &:hover::after {
-    width: 100%;
-    left: 0;
-    transform: translateX(0%);
-  }
-
-  &::after {
-    content: "";
-    background-color: var(--green);
-    width: 0%;
-    position: absolute;
-    height: 3px;
-    top: 105%;
-    left: 50%;
-    transform: translateX(50%);
-    transition: all 0.5s;
-  }
-}
 
 

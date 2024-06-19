@@ -34,7 +34,7 @@ export default function About() {
           <p>
             Mi principal objetivo es aportar mis habilidades, valor y
             conocimiento a mis compañeros y clientes para la creación de
-            experiencias de usuario excepcionales. A la vez que seguir
+            experiencias de usuario excepcionales, a la vez que seguir
             aprendiendo nuevas tecnologías y mejorar las que ya conozco. <br />
             <br />Por todo esto, he dedicado y voy a seguir dedicando una gran
             cantidad de tiempo a aprender y mejorar mis habilidades a través de

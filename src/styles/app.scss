@@ -12,13 +12,15 @@
 
 :root {
   --green: #23d997;
-  --body-black: #1b1b1b;
-  --nav-black: #282828;
   --padding-lef-elements: 1rem;
   --padding-lef-double: 2rem;
-  --milk-white: #fdfff5;
   --border-big: 20px;
+  --color-proyect: #1b1b1b;
+  --milk-white: #fdfff5;
+  --shadow: rgba(0, 0, 0, 0.211);
 }
+
+
 
 * {
   margin: 0;
@@ -37,7 +39,7 @@
 }
 
 body {
-  color: #fdfff5;
+  color: var(--milk-white);
   background: var(--body-black);
   font-family: "Inter", sans-serif;
   overflow-x: hidden;

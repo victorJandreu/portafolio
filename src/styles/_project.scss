@@ -62,14 +62,14 @@
 }
 
 .proyect {
-  background-color: #fdfff5;
+  background-color: var(--background-proyect);
   border-radius: var(--border-big);
   flex-direction: column;
-  color: var(--body-black);
+  color: var(--color-proyect);
   border: 5px solid transparent;
   transition: border-color 0.4s ease-in-out;
   position: relative;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.875);
+  box-shadow: 2px 2px 10px var(--shadow);
   padding: 1.2rem;
 
   h3{
@@ -85,7 +85,7 @@
 
   .proyect-web {
     display: block;
-    color: var(--body-black);
+    color: #1b1b1b;
   }
 
   p {
@@ -115,7 +115,7 @@
   justify-content: flex-end;
 
   & > a {
-    color: var(--body-black);
+    color: var(--color-proyect);
     font-size: 1rem;
     font-weight: 600;
     transition: color 0.3s;

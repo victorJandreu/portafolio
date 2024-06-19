@@ -64,7 +64,7 @@
     border-radius: 4px 0 0 4px;
     border: 1px solid var(--milk-white);
     font-size: 1rem;
-    background-color: var(--milk-white);
+    background-color: #fdfff5;
 
   }
   button {
@@ -121,7 +121,7 @@
 
   input::placeholder,
   textarea::placeholder {
-    color: var(--body-black);
+    color: var(--milk-opacity);
     opacity: .6;
     font-family: "Inter", sans-serif;
 
@@ -137,7 +137,9 @@
   input,
   textarea {
     padding: 0.5rem;
-    background-color: var(--milk-white);
+    background-color: #fdfff5;
+    color: var(--milk-white);
+    border: 1px solid var(--input-border);
  
   }
 
