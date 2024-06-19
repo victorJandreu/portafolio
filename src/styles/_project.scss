@@ -6,11 +6,9 @@
   gap: 30px;
   margin-left: var(--padding-lef-elements);
 
-  @include u.breakpoints(medium){
-    margin-left: var(--padding-lef-double) ;
+  @include u.breakpoints(medium) {
+    margin-left: var(--padding-lef-double);
   }
-
-
 
   .mobil-image {
     display: none;
@@ -26,8 +24,6 @@
     flex-direction: column;
     width: 100%;
     margin: 0;
-
-   
 
     .image-princi {
       display: none;
@@ -46,25 +42,23 @@
     }
   }
 
-  @media  (min-width: 740px) and (max-width: 900px) {
+  @media (min-width: 740px) and (max-width: 900px) {
     .image-princi {
       display: none;
     }
     .mobil-image {
       display: block;
     }
-    
-}
+  }
 
-@media  (min-width: 1117px) and (max-width: 1217px) {
-  .image-princi {
-    display: none;
+  @media (min-width: 1117px) and (max-width: 1217px) {
+    .image-princi {
+      display: none;
+    }
+    .mobil-image {
+      display: block;
+    }
   }
-  .mobil-image {
-    display: block;
-  }
-  
-}
 }
 
 .proyect {
@@ -76,60 +70,72 @@
   transition: border-color 0.4s ease-in-out;
   position: relative;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.875);
+  padding: 1.2rem;
+
+  h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
 
   &:hover {
     border: 5px solid var(--green);
   }
 
-  &:hover .image-princi,
-  &:hover .mobil-image {
-    opacity: 0.7;
-  }
+ 
 
   .proyect-web {
     display: block;
-    padding: 1.2rem;
     color: var(--body-black);
-    min-height: 100%;
+  }
 
-    & > p {
-      @include u.breakpoints-down(small) {
-        font-size: 0.9rem;
-      }
+  p {
+    @include u.breakpoints-down(small) {
+      font-size: 0.9rem;
     }
   }
 
-  .top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 
   .image-princi,
   .mobil-image {
     border-radius: var(--border-big);
     margin-block: 1.2rem;
     height: 300px;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .proyect-web:hover .image-princi,
+  .proyect-web:hover .mobil-image {
+    opacity: 0.7;
   }
 }
 
+.proyect-links{
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
 
-.code {
-  position: absolute;
-  top: -18px;
-  right: -10px;
-  color: var(--body-black);
-  font-size: 1rem;
-  font-weight: 800;
-  transition: color 0.3s;
-  display: block;
-  padding: 1.2rem;
-
-  &:hover {
-    color: var(--green);
+  & > a {
+    color: var(--body-black);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  
+    &:hover {
+      color: var(--green);
+    }
   }
 }
+
 
 .fondo {
   position: relative;

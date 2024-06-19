@@ -124,6 +124,14 @@
     color: var(--body-black);
     opacity: .6;
     font-family: "Inter", sans-serif;
+
+    @media (max-width: 400px) {
+      font-size: .6rem;
+    }
+
+    @media (max-width: 620px) {
+      font-size: .75rem;
+    }
   }
 
   input,
