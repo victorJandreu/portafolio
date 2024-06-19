@@ -150,7 +150,7 @@ useEffect(() => {
             </li>
             <li>
               <a href="#media" onClick={(e) => handleLinkClick(e, "media")}>
-                CV y redes
+                Redes
               </a>
             </li>
           </ul>
