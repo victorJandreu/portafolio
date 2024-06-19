@@ -104,7 +104,7 @@ useEffect(() => {
           </li>
           <li>
             <a href="#media" onClick={(e) => handleSmoot(e, "media")}>
-              CV y redes
+              Redes
             </a>
           </li>
         </ul>
