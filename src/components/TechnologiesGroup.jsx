@@ -13,7 +13,7 @@ import redux from "../assets/redux.svg";
 export default function TechnologiesGroup() {
   return (
     <section className="center" id="Tecnologia"> 
-    <h2>Tecnologias</h2>
+    <h2>Tecnologías</h2>
     <div className="tecnologias-group ">
         <Technologies icon={html}>Html</Technologies>
         <Technologies icon={css}>Css</Technologies>

@@ -22,7 +22,7 @@ export default function ProyectGroup() {
           mobilImage={fireBallMovil}
           url="https://victorjandreu.github.io/game_platform/"
           codigo="https://github.com/victorJandreu/game_platform"
-          title="Videogame news"
+          title="Noticias de videojuegos"
           tecnoArray={[
             { icon: react, name: "React" },
             { icon: redux, name: "Redux" },
@@ -33,12 +33,12 @@ export default function ProyectGroup() {
           Página web que muestra los videojuegos más populares, los nuevos y los
           próximos juegos más populares. Además permite buscar videojuegos y la
           busquedad mostrará una serie de videojuegos cuyo nombre coincida y los
-          ordena por popularidad
+          ordenará por popularidad
         </Proyect>
         <Proyect
          mobilImage={musicMovil}
           image={music}
-          title="Reproductor de musica"
+          title="Reproductor de música"
           url="https://victorjandreu.github.io/music-player/"
           codigo="https://github.com/victorJandreu/music-player"
           tecnoArray={[
@@ -54,7 +54,7 @@ export default function ProyectGroup() {
         mobilImage={questionMovil}
           image={questionGame}
           url="https://victorjandreu.github.io/question-game/"
-          title="Question game"
+          title="Juego de preguntas"
           codigo="https://github.com/victorJandreu/question-game"
           tecnoArray={[
             { icon: react, name: "React" },

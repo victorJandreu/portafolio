@@ -1,15 +1,21 @@
 @use "./breakpoint" as u;
 
 .tecnologias-group {
-  margin-left: 1rem;
+  margin-left: var(--padding-lef-elements);
   display: flex;
   gap: 40px;
-  border-radius: 20px;
+  border-radius: var(--border-big);
   border: 1px solid #fdfff5;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 1.2rem;
+
+  
+
+  @include u.breakpoints(medium){
+    margin-left: var(--padding-lef-double);
+  }
 
   div {
     text-align: center;
@@ -38,13 +44,18 @@
   }
 }
 
-.green-space {
-  display: flex;
-  align-items: center;
-  div {
-    width: 10px;
-    height: 10px;
-    background-color: var(--milk-white);
-    transform: rotate(45deg);
+@media (min-width: 1190px){ 
+  .green-space {
+    display: flex;
+    align-items: center;
+    div {
+      width: 10px;
+      height: 10px;
+      background-color: var(--milk-white);
+      transform: rotate(45deg);
+    }
   }
+  
+
 }
+

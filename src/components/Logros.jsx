@@ -24,8 +24,8 @@ export default function Logros(){
             <li>
               <span className="boll"></span>
               Tras trabajar durante un año en una academía como profesor de
-              español adquirí muy buenas  habilidades de <span className="highlight">comunicación </span>  y de
-             <span className="highlight"> trabajo en equipo </span>  ya que compartiamos alumnos entre profesores.
+              español adquirí una gran capacidad de <span className="highlight">comunicación </span>  y de
+             <span className="highlight"> trabajo en equipo</span>,  ya que compartiamos alumnos entre profesores.
             </li>
             <li>
               <span className="boll"></span>

@@ -5,12 +5,18 @@
 
 .language-group {
   display: flex;
-  border-radius: 20px;
+  border-radius: var(--border-big);
   flex-wrap: wrap;
   border: 1px solid #fdfff5;
   padding: 1.2rem;
-  margin-left: 1rem;
+  margin-left: var(--padding-lef-elements);
   justify-content: center;
+
+  @include u.breakpoints(medium){
+    margin-left: var(--padding-lef-double) ;
+  }
+
+
 
   @include u.breakpoints-down(small){
     display: flex;

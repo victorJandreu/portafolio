@@ -69,9 +69,9 @@ export default function Contact() {
 
   return (
     <div className="contact center" id="contact">
-      <h2>Contact Me</h2>
+      <h2>Contacta conmigo</h2>
       <h3>
-        <span>Opcion 1:</span> Copiar el siguiente email y enviarme uno desde su
+        <span>Opción 1:</span> Copiar el siguiente email y enviarme uno desde su
         correo.
       </h3>
       <div className="copy-email">
@@ -86,13 +86,13 @@ export default function Contact() {
         
       </div>
       <h3>
-        <span>Opcion 2:</span> Enviarme el email directamente desde aquí.
+        <span>Opción 2:</span> Enviarme un email directamente desde aquí.
       </h3>
-      {isLoading && <p className="loading">Loading...</p>}
+      {isLoading && <p className="loading">Cargando...</p>}
       {isError && <p className="error">El mensaje no se pudo enviar</p>}
       <form className="grid-email" onSubmit={sendEmail}>
         <label htmlFor="email" className="email-label">
-          <p>Your Email</p>
+          <p>Su email</p>
           <input
             type="email"
             name="email"
@@ -102,21 +102,21 @@ export default function Contact() {
           />
         </label>
         <label htmlFor="subject" className="subject-label">
-          <p>Subject</p>
+          <p>Asunto</p>
           <input
             type="text"
             name="subject"
             id="subject"
-            placeholder="Intered in your profile"
+            placeholder="Estamos interesados..."
             required
           />
         </label>
         <label htmlFor="message" className="message-label">
-          <p>Message</p>
+          <p>Mensaje</p>
           <textarea
             name="message"
             id="message"
-            placeholder="Hello, my name is...."
+            placeholder="Buenos días, mi nombre es..."
             required
           />
         </label>

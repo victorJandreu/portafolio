@@ -1,7 +1,24 @@
 @use "./breakpoint" as u;
 
+.Logo {
+  display: block;
+  font-size: 2rem !important;
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
 
+  &:hover {
+    color: #23d997;
+  }
 
+  span {
+    font-family: "Playwrite NL", cursive;
+    font-size: 1rem;
+    padding: 0.1rem;
+    padding-right: 0.2rem;
+    color: #23d997;
+  }
+}
 
 .nav-container {
   padding: 1rem 0;
@@ -15,33 +32,12 @@
     justify-content: space-between;
     gap: 20px;
 
-    & > a {
-      display: block;
-      font-size: 2rem !important;
-      font-weight: 800;
-      cursor: pointer;
-      transition: color 0.3s ease-in-out;
-
-      &:hover {
-        color: #23d997;
-      }
-
-      span {
-        font-family: "Playwrite NL", cursive;
-        font-size: 1rem;
-        padding: 0.1rem;
-        padding-right: 0.2rem;
-        color: #23d997;
-      }
-    }
-
     a {
       color: #fdfff5;
       font-size: 1.3rem;
-      @include u.breakpoints-down(medium){
+      @include u.breakpoints-down(medium) {
         font-size: 1rem;
-       }
-      
+      }
     }
   }
 }
@@ -59,50 +55,50 @@
   color: #fdfff5;
   background: black;
 
-  &:hover{
+  &:hover {
     color: #23d997;
   }
 
-  @include u.breakpoints-down(small){
+  @include u.breakpoints-down(small) {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
-
- 
 }
 
-.mobil-ul{
-display: none;
-@include u.breakpoints-down(small){
+.mobil-ul {
   display: none;
-  position: fixed;
-  background-color: #282828;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
+  @include u.breakpoints-down(small) {
+    display: none;
+    position: fixed;
+    background-color: var(--nav-black);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+    a{
+      font-size: 2rem !important;
+    }
+  }
 }
 
- .desk-ul {
+.desk-ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 90%;
   max-width: 700px;
 
-  @include u.breakpoints-down(small){
+  @include u.breakpoints-down(small) {
     display: none;
   }
-
 }
 
 .desk-ul,
