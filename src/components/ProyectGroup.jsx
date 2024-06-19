@@ -15,7 +15,7 @@ import redux from "../assets/redux.svg";
 export default function ProyectGroup() {
   return (
     <section className="center" id="proyecto">
-      <h2>Proyect</h2>
+      <h2>Proyectos</h2>
       <div className="proyect-group ">
         <Proyect
           image={fireBall}
