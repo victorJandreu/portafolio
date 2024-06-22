@@ -7,7 +7,7 @@ export default function Media() {
   <nav className="media" id="media">
     <ul>
       <li>
-        <a href="https://www.linkedin.com/in/victorandreufronteddeveloper/" target="_blank"><img src={linkedin} alt="Linkedin" /></a>
+        <a href="https://www.linkedin.com/in/victorandreufrontend/" target="_blank"><img src={linkedin} alt="Linkedin" /></a>
       </li>
       <li><a href="https://github.com/victorJandreu" target="_blank"><img src={github} alt="Github" /></a></li>
     </ul>
