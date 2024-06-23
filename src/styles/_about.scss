@@ -56,7 +56,7 @@ h1 {
     display: flex;
     align-items: center;
     width: 98%;
-    max-width: 500px;
+    max-width: 550px;
     color: var(--milk-opacity);
 
     @include u.breakpoints-down(small){

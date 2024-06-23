@@ -7,7 +7,6 @@ import {
   titleAnimation2,
 } from "../../animation";
 
-
 export default function About() {
   return (
     <motion.section
@@ -25,20 +24,22 @@ export default function About() {
             Frontend-developer
           </motion.span>
         </motion.h1>
-      
       </div>
 
       <section>
         <h2>Sobre mí</h2>
         <div className="about-me">
           <p>
-            Mi principal objetivo es aportar mis habilidades, valor y
-            conocimiento a mis compañeros y clientes para la creación de
-            experiencias de usuario excepcionales, a la vez que seguir
-            aprendiendo nuevas tecnologías y mejorar las que ya conozco. <br />
-            <br />Por todo esto, he dedicado y voy a seguir dedicando una gran
-            cantidad de tiempo a aprender y mejorar mis habilidades a través de
-            proyectos personales y cursos en línea.
+            Mi objetivo es aportar mis habilidades y conocimientos para crear
+            experiencias de usuario excepcionales. Me apasiona aprender nuevas
+            tecnologías y perfeccionar las que ya conozco, invirtiendo tiempo en
+            proyectos personales y cursos en línea para mejorar continuamente.{" "}
+            <br />
+            <br />
+            Fuera del ámbito profesional, me gusta explorar nuevos lugares,
+            salir a pasear y jugar al tenis. Estas actividades me mantienen
+            inspirado y motivado, reflejándose positivamente en mi trabajo
+            diario.
           </p>
           <div className="img-container">
             <motion.img
@@ -53,4 +54,3 @@ export default function About() {
     </motion.section>
   );
 }
-
