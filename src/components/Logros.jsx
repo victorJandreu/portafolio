@@ -1,4 +1,5 @@
 import cvPdf from "../pdf/curriculum.pdf";
+import englishCv from "../pdf/englishCV.pdf";
 import cvLogo from "../assets/Cv.svg";
 import { useTranslation } from "react-i18next";
 
@@ -66,7 +67,7 @@ export default function Logros() {
            {" "}{t("achievements.four-list.third")}
         </li>
       </ul>
-      <a href={cvPdf} className="cv" target="_blank">
+      <a href={i18n.language === "es" ? cvPdf : englishCv} className="cv" target="_blank">
       {t("achievements.cv")} <img src={cvLogo} alt="CV" />
       </a>
     </section>

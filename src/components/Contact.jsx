@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import copy from "../assets/copy.svg";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   const [isLoading, setIsloading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [copiC, setcopiC] = useState(false);
+  const [t, i18n] = useTranslation("global")
 
   function sendEmail(e) {
     e.preventDefault();
@@ -28,8 +30,8 @@ export default function Contact() {
       .then((message) => {
         if (message == "OK") {
           Swal.fire({
-            title: "Gracias por el mensaje",
-            text: "Muy pronto me pondré en contacto contigo por email",
+            title: `${t("contact.modal.mensaje.title")}`,
+            text: `${t("contact.modal.mensaje.description")}`,
             icon: "success",
             iconColor: "#23d997",
             color: "#1b1b1b",
@@ -67,18 +69,18 @@ export default function Contact() {
     }
   }, [copyEmail]);
 
+
   return (
     <div className="contact center" id="contact">
-      <h2>Contacta conmigo</h2>
+      <h2>{t("contact.title")}</h2>
       <h3>
-        <span>Opción 1:</span> Copiar el siguiente email y enviarme uno desde su
-        correo.
+        <span>{t("contact.option1.title")}</span> {t("contact.option1.description")}
       </h3>
       <div className="copy-email">
         <input type="text" readOnly value="victorandreum@gmail.com" />
         
         <div className="btn-copy-div">
-        {copiC && <p className="advert-copi">Copiado</p>}
+        {copiC && <p className="advert-copi">{t("contact.copy")}</p>}
         <button onClick={copyEmail}>
           <img src={copy} alt="copiar" />
         </button>
@@ -86,42 +88,43 @@ export default function Contact() {
         
       </div>
       <h3>
-        <span>Opción 2:</span> Enviarme un email directamente desde aquí.
+        <span>{t("contact.option2.title")}</span> {t("contact.option2.description")}
       </h3>
-      {isLoading && <p className="loading">Cargando...</p>}
-      {isError && <p className="error">El mensaje no se pudo enviar</p>}
+      {isLoading && <p className="loading">{t("contact.modal.loading")}</p>}
+      {isError && <p className="error">{t("contact.modal.error")}</p>}
       <form className="grid-email" onSubmit={sendEmail}>
         <label htmlFor="email" className="email-label">
-          <p>Su email</p>
+          <p>{t("contact.option2.input1.label")}</p>
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="escribaSuEmail@gmail.com"
+            placeholder={t("contact.option2.input1.placeholder")}
             required
           />
         </label>
         <label htmlFor="subject" className="subject-label">
-          <p>Asunto</p>
+          <p>{t("contact.option2.input2.label")}</p>
           <input
             type="text"
             name="subject"
             id="subject"
-            placeholder="Estamos interesados..."
+            placeholder={t("contact.option2.input2.placeholder")}
             required
           />
         </label>
         <label htmlFor="message" className="message-label">
-          <p>Mensaje</p>
+          <p>{t("contact.option2.input3.label")}</p>
           <textarea
             name="message"
             id="message"
-            placeholder="Buenos días, mi nombre es..."
+            placeholder={t("contact.option2.input3.placeholder")}
             required
           />
         </label>
-        <button className="send-btn">Enviar</button>
+        <button className="send-btn">{t("contact.option2.button")}</button>
       </form>
     </div>
   );
 }
+

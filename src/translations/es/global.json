@@ -81,5 +81,38 @@
         "span2": "gestión del tiempo",
         "third": "y la priorización en entornos dinámicos."
     }
+  },
+  "contact": {
+    "title": "Contacta conmigo",
+    "copy": "copiado",
+    "option1": {
+        "title": "Opción 1:",
+        "description": "Copiar el siguiente email y enviarme uno desde su correo."
+    },
+    "option2": {
+        "title": "Opción 2:",
+        "description": "Enviarme un email directamente desde aquí.",
+        "input1": {
+            "label": "Su email",
+            "placeholder": "escribaSuEmail@gmail.com"
+        },
+        "input2": {
+            "label": "Asunto",
+            "placeholder": "Estamos interesados..."
+        },
+        "input3": {
+            "label": "Mensaje",
+            "placeholder": "Buenos días, mi nombre es..."
+        },
+        "button": "Enviar"
+    },
+    "modal": {
+        "loading": "Cargando...",
+        "error": "El mensaje no se pudo enviar. Inténtelo de nuevo o elija la opción 1",
+        "mensaje": {
+            "title": "Gracias por enviarme un correo",
+            "description": "Muy pronto me pondré en contacto contigo por email"
+        }
+    } 
   }
 }
