@@ -33,7 +33,7 @@ export default function About() {
             Mi objetivo es aportar mis habilidades y conocimientos para crear
             experiencias de usuario excepcionales. Me apasiona aprender nuevas
             tecnologías y perfeccionar las que ya conozco, invirtiendo tiempo en
-            proyectos personales y cursos en línea para mejorar continuamente.{" "}
+            proyectos y cursos en línea para mejorar continuamente.
             <br />
             <br />
             Fuera del ámbito profesional, me gusta explorar nuevos lugares,
