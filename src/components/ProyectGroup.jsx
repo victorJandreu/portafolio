@@ -5,24 +5,26 @@ import fireBall from "../assets/fireBall2.jpg";
 import fireBallMovil from "../assets/fireball-mobil.jpg"
 import musicMovil from "../assets/music-mobil.jpg"
 import questionMovil from "../assets/questionMobil.jpg";
+import { useTranslation } from "react-i18next";
 //icons
 import sass from "../assets/sass.svg";
 import react from "../assets/react.svg";
 import router from "../assets/router.svg";
 import redux from "../assets/redux.svg";
 
-//gola
 export default function ProyectGroup() {
+  const [t, i18n] = useTranslation("global")
+
   return (
     <section className="center" id="proyecto">
-      <h2>Proyectos</h2>
+      <h2>{t("proyect.title")}</h2>
       <div className="proyect-group ">
         <Proyect
           image={fireBall}
           mobilImage={fireBallMovil}
           url="https://victorjandreu.github.io/game_platform/"
           codigo="https://github.com/victorJandreu/game_platform"
-          title="Noticias de videojuegos"
+          title={t("proyect.first-proyect.title")}
           tecnoArray={[
             { icon: react, name: "React" },
             { icon: redux, name: "Redux" },
@@ -30,15 +32,12 @@ export default function ProyectGroup() {
             { icon: sass, name: "Sass" },
           ]}
         >
-          Página web que muestra los videojuegos más populares, los nuevos y los
-          próximos juegos más populares. Además permite buscar videojuegos y la
-          busquedad mostrará una serie de videojuegos cuyo nombre coincida y los
-          ordenará por popularidad
+          {t("proyect.first-proyect.description")}
         </Proyect>
         <Proyect
          mobilImage={musicMovil}
           image={music}
-          title="Reproductor de música"
+          title={t("proyect.second-proyect.title")}
           url="https://victorjandreu.github.io/music-player/"
           codigo="https://github.com/victorJandreu/music-player"
           tecnoArray={[
@@ -46,15 +45,13 @@ export default function ProyectGroup() {
             { icon: sass, name: "Sass" },
           ]}
         >
-          Reproductor de música con 6 canciones que permite parar, pasar
-          automáticamente o pasar a la siguiente o la anterior canción. Además
-          puedes seleccionar la canción que desees.
+          {t("proyect.second-proyect.description")}
         </Proyect>
         <Proyect
         mobilImage={questionMovil}
           image={questionGame}
           url="https://victorjandreu.github.io/question-game/"
-          title="Juego de preguntas"
+          title={t("proyect.third-proyect.title")}
           codigo="https://github.com/victorJandreu/question-game"
           tecnoArray={[
             { icon: react, name: "React" },
@@ -62,11 +59,7 @@ export default function ProyectGroup() {
             { icon: sass, name: "Sass" },
           ]}
         >
-          Juego con 3 niveles de dificultad, apareces en la planta 3 de una casa
-          y tienes que ir buscando la escalera hasta salir sin perder tus 3 💛.
-          Las casillas pueden ser preguntas, 💛, la escalera o nada. Por cada
-          pregunta fallada pierdes una vida. Para moverte puedes usar las teclas
-          ⌨ o clicar en los botones de movimiento.
+          {t("proyect.third-proyect.description")} 
         </Proyect>
       </div>
     </section>

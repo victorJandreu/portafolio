@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
 import github from "../assets/github.svg";
 import web from "../assets/web.svg"
+import { useTranslation } from "react-i18next";
 
 export default function Proyect({
   codigo,
@@ -11,16 +12,18 @@ export default function Proyect({
   url,
   mobilImage,
 }) {
+  const [t, i18n] = useTranslation("global")
+
   return (
     <div className="proyect">
       <h3>{title}</h3>
       <div className="proyect-links">
         <a href={codigo} target="_blank">
-          <p>Código</p>
+          <p>{t("proyect.code")}</p>
           <img src={github} alt="github" />
         </a>
         <a href={url} target="_blank" >
-          <p>Página web</p>
+          <p>{t("proyect.web")}</p>
           <img src={web} alt="página web" />
         </a>
       </div>

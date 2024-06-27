@@ -9,11 +9,14 @@ import github from "../assets/github.svg";
 import react from "../assets/react.svg";
 import router from "../assets/router.svg";
 import redux from "../assets/redux.svg";
+import { useTranslation } from "react-i18next";
 
 export default function TechnologiesGroup() {
+  const [t, i18n] = useTranslation("global")
+
   return (
     <section className="center" id="Tecnologia"> 
-    <h2>Tecnologías</h2>
+    <h2>{t("technologies.title")}</h2>
     <div className="tecnologias-group ">
         <Technologies icon={html}>Html</Technologies>
         <Technologies icon={css}>Css</Technologies>

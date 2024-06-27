@@ -1,0 +1,85 @@
+{
+  "header": {
+    "hello-word": "Hola mundo"
+  },
+  "nav": {
+    "nav-options": {
+      "first": "Tecnologías",
+      "second": "Idiomas",
+      "third": "Proyectos",
+      "four": "Logros",
+      "five": "Contacto",
+      "six": "Redes"
+    }
+  },
+  "about": {
+    "title": "Sobre mí",
+    "first-text": "Mi objetivo es aportar mis habilidades y conocimientos para crear experiencias de usuario excepcionales. Me apasiona aprender nuevas tecnologías y perfeccionar las que ya conozco, invirtiendo tiempo en proyectos y cursos en línea para mejorar continuamente.",
+    "second-text": "Fuera del ámbito profesional, me gusta explorar nuevos lugares, salir a pasear y jugar al tenis. Estas actividades me mantienen inspirado y motivado, reflejándose positivamente en mi trabajo diario."
+  },
+  "technologies": {
+    "title": "Tecnologías"
+  },
+  "languages": {
+    "title": "Idiomas",
+    "spanish": {
+        "title": "Español",
+        "level": "Nativo"
+    },
+    "english": "Inglés",
+    "japanese": "Japonés"
+  },
+  "proyect": {
+    "title": "Proyectos",
+    "code": "Código",
+    "web": "Página web",
+    "first-proyect": {
+        "title": "Noticias de videojuegos",
+        "description": "Página web que muestra los videojuegos más populares, los nuevos y los próximos juegos más populares. Además permite buscar videojuegos y la busquedad mostrará una serie de videojuegos cuyo nombre coincida y los ordenará por popularidad."
+    },
+    "second-proyect": {
+        "title": "Reproductor de música",
+        "description": "Reproductor de música con 6 canciones que permite parar, pasar automáticamente o pasar a la siguiente o la anterior canción. Además puedes seleccionar la canción que desees."
+    },
+    "third-proyect": {
+        "title": "Juego de preguntas",
+        "description": "Juego con 3 niveles de dificultad, apareces en la planta 3 de una casa y tienes que ir buscando la escalera hasta salir sin perder tus 3 💛. Las casillas pueden ser preguntas, 💛, la escalera o nada. Por cada pregunta fallada pierdes una vida. Para moverte puedes usar las teclas ⌨ o clicar en los botones de movimiento."
+    }
+  },
+  "achievements": {
+    "title": "Logros",
+    "cv": "Más información en mi CV",
+    "first-list": {
+        "title": "Curso 'The Frontend Developer Career Path' en Scrimba",
+        "one": ": Completé más de",
+        "span1": "70 horas",
+        "two": "de formación en frontend, desarrollando más de",
+        "span2": "15 proyectos",
+        "third": "de manera independiente, lo que me permitió adquirir y fortalecer mis habilidades técnicas."
+    },
+    "second-list": {
+        "title": "Proyectos en Frontend Mentor",
+        "one": ": Realicé",
+        "span1": "48 proyectos",
+        "two": "reales de nivel junior y newbaby en Frontend Mentor, además de desarrollar",
+        "span2": "proyectos propios",
+        "third": ", lo cual fortaleció mis capacidades en frontend y diseño."
+    },
+    "third-list": {
+        "title": "Experiencia como Profesor de Español",
+        "one": ": Trabajé durante un año en una academia como profesor de español, adquiriendo habilidades de",
+        "span1": "comunicación",
+        "two": "y",
+        "span2": "trabajo en equipo",
+        "third": "al coordinarme con otros profesores para compartir alumnos."
+    },
+    "four-list": {
+        "title": "Experiencia en Japón",
+        "one": ": Viví y trabajé como camarero en Japón durante un año, desarrollando una gran",
+        "span1": "capacidad de adaptabilidad",
+        "two": ", entendimiento intercultural y habilidades sólidas en la",
+        "span2": "gestión del tiempo",
+        "third": "y la priorización en entornos dinámicos."
+    }
+  }
+}

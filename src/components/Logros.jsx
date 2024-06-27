@@ -1,47 +1,73 @@
 import cvPdf from "../pdf/curriculum.pdf";
 import cvLogo from "../assets/Cv.svg";
+import { useTranslation } from "react-i18next";
+
+
 
 export default function Logros() {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <section className="center logros" id="logros">
-      <h2>Logros</h2>
+      <h2>{t("achievements.title")}</h2>
       <ul>
         <li>
           <span className="boll"></span>
-          <strong>Curso "The Frontend Developer Career Path" en Scrimba</strong>
-          : Completé más de
-          <span className="highlight"> 70 horas</span> de formación en frontend,
-          desarrollando más de <span className="highlight"> 15 proyectos </span>
-          de manera independiente, lo que me permitió adquirir y fortalecer mis
-          habilidades técnicas.
+          <strong>{t("achievements.first-list.title")}</strong>
+          {t("achievements.first-list.one")}
+          <span className="highlight">
+            {" "}
+            {t("achievements.first-list.span1")}
+          </span>{" "}
+          {t("achievements.first-list.two")}{" "}
+          <span className="highlight">
+            {" "}
+            {t("achievements.first-list.span2")}{" "}
+          </span>
+          {t("achievements.first-list.third")}
         </li>
         <li>
           <span className="boll"></span>
-          <strong>Proyectos en Frontend Mentor</strong>: Realicé
-          <span className="highlight"> 48 proyectos </span> reales de nivel
-          junior y newbaby en Frontend Mentor, además de desarrollar
-          <span className="highlight"> proyectos propios</span>, lo cual
-          fortaleció mis capacidades en frontend y diseño.
+          <strong>{t("achievements.second-list.title")}</strong>
+          {t("achievements.second-list.one")}
+          <span className="highlight">
+            {" "}
+            {t("achievements.second-list.span1")}
+          </span>{" "}
+          {t("achievements.second-list.two")}{" "}
+          <span className="highlight">
+            {t("achievements.second-list.span2")}</span>
+          {t("achievements.second-list.third")}
         </li>
         <li>
           <span className="boll"></span>
-          <strong> Experiencia como Profesor de Español</strong>: Trabajé
-          durante un año en una academia como profesor de español, adquiriendo
-          habilidades de
-          <span className="highlight"> comunicación </span> y{" "}
-          <span className="highlight"> trabajo en equipo</span> al coordinarme
-          con otros profesores para compartir alumnos.
+          <strong>{t("achievements.third-list.title")}</strong>
+          {t("achievements.third-list.one")}
+          <span className="highlight">
+            {" "}
+            {t("achievements.third-list.span1")}
+          </span>{" "}
+          {t("achievements.third-list.two")}{" "}
+          <span className="highlight">
+            {t("achievements.third-list.span2")}</span> 
+           {" "}{t("achievements.third-list.third")}
         </li>
         <li>
           <span className="boll"></span>
-         <strong> Experiencia en Japón</strong>: Viví y trabajé como camarero en Japón durante un
-          año, desarrollando una gran <span className="highlight">capacidad de adaptabilidad</span>, entendimiento
-          intercultural y habilidades sólidas en la <span className="highlight">gestión del tiempo</span> y la
-          priorización en entornos dinámicos.
+          <strong>{t("achievements.four-list.title")}</strong>
+          {t("achievements.four-list.one")}
+          <span className="highlight">
+            {" "}
+            {t("achievements.four-list.span1")}
+          </span>
+          {t("achievements.four-list.two")}{" "}
+          <span className="highlight">
+            {t("achievements.four-list.span2")}</span> 
+           {" "}{t("achievements.four-list.third")}
         </li>
       </ul>
       <a href={cvPdf} className="cv" target="_blank">
-        Más información en mi CV <img src={cvLogo} alt="CV" />
+      {t("achievements.cv")} <img src={cvLogo} alt="CV" />
       </a>
     </section>
   );

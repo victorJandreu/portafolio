@@ -3,6 +3,7 @@ import ReactHamburger from "../assets/hamburger.svg?react";
 import Close from "../assets/close.svg?react";
 import moon from "../assets/moon.svg";
 import sun from "../assets/sun.svg"
+import { useTranslation } from "react-i18next";
 
 const root = document.querySelector(":root");
 const styls = {
@@ -13,6 +14,8 @@ const opacity = {
 }
 
 export default function Nav() {
+  const [t, i18n] = useTranslation("global")
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [isWhiteMode, setIsWhiteMode] = useState(false)
 
@@ -68,8 +71,8 @@ useEffect(() => {
           V<span>j</span>A
         </a>
         <button className="mode-dark-light" onClick={() => setIsWhiteMode(prev => !prev)}><div>
-          <img src={moon} alt="modo oscuro" className="dark" style={isWhiteMode ? opacity : null} />
-          <img src={sun} alt="modo claro" className="light"   style={isWhiteMode ? null : opacity} />
+          <img src={moon} alt="dark mode" className="dark" style={isWhiteMode ? opacity : null} />
+          <img src={sun} alt="light mode" className="light"   style={isWhiteMode ? null : opacity} />
           <div className="circle" style={isWhiteMode ? styls : null}></div>
         </div>
         </button>
@@ -79,32 +82,32 @@ useEffect(() => {
         <ul className="desk-ul">
           <li>
             <a href="#Tecnologia" onClick={(e) => handleSmoot(e, "Tecnologia")}>
-              Tecnologías
+            {t("nav.nav-options.first")}
             </a>
           </li>
           <li>
             <a href="#idioma" onClick={(e) => handleSmoot(e, "idioma")}>
-              Idiomas
+            {t("nav.nav-options.second")}
             </a>
           </li>
           <li>
             <a href="#proyecto" onClick={(e) => handleSmoot(e, "proyecto")}>
-              Proyectos
+            {t("nav.nav-options.third")}
             </a>
           </li>
           <li>
             <a href="#logros" onClick={(e) => handleSmoot(e, "logros")}>
-              Logros
+            {t("nav.nav-options.four")}
             </a>
           </li>
           <li>
             <a href="#contact" onClick={(e) => handleSmoot(e, "contact")}>
-              Contacto
+            {t("nav.nav-options.five")}
             </a>
           </li>
           <li>
             <a href="#media" onClick={(e) => handleSmoot(e, "media")}>
-              Redes
+            {t("nav.nav-options.six")}
             </a>
           </li>
         </ul>
@@ -122,12 +125,12 @@ useEffect(() => {
                 href="#Tecnologia"
                 onClick={(e) => handleLinkClick(e, "Tecnologia")}
               >
-                Tecnologías
+                {t("nav.nav-options.first")}
               </a>
             </li>
             <li>
               <a href="#idioma" onClick={(e) => handleLinkClick(e, "idioma")}>
-                Idiomas
+              {t("nav.nav-options.second")}
               </a>
             </li>
             <li>
@@ -135,22 +138,22 @@ useEffect(() => {
                 href="#proyecto"
                 onClick={(e) => handleLinkClick(e, "proyecto")}
               >
-                Proyectos
+                {t("nav.nav-options.third")}
               </a>
             </li>
             <li>
               <a href="#logros" onClick={(e) => handleLinkClick(e, "logros")}>
-                Logros{" "}
+              {t("nav.nav-options.four")}
               </a>
             </li>
             <li>
               <a href="#contact" onClick={(e) => handleLinkClick(e, "contact")}>
-                Contacto
+              {t("nav.nav-options.five")}
               </a>
             </li>
             <li>
               <a href="#media" onClick={(e) => handleLinkClick(e, "media")}>
-                Redes
+              {t("nav.nav-options.six")}
               </a>
             </li>
           </ul>

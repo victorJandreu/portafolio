@@ -6,8 +6,11 @@ import {
   photoAni,
   titleAnimation2,
 } from "../../animation";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const [t, i18n] = useTranslation("global")
+
   return (
     <motion.section
       className="center"
@@ -27,19 +30,13 @@ export default function About() {
       </div>
 
       <section>
-        <h2>Sobre mí</h2>
+        <h2>{t("about.title")}</h2>
         <div className="about-me">
           <p>
-            Mi objetivo es aportar mis habilidades y conocimientos para crear
-            experiencias de usuario excepcionales. Me apasiona aprender nuevas
-            tecnologías y perfeccionar las que ya conozco, invirtiendo tiempo en
-            proyectos y cursos en línea para mejorar continuamente.
+          {t("about.first-text")}
             <br />
             <br />
-            Fuera del ámbito profesional, me gusta explorar nuevos lugares,
-            salir a pasear y jugar al tenis. Estas actividades me mantienen
-            inspirado y motivado, reflejándose positivamente en mi trabajo
-            diario.
+            {t("about.second-text")}
           </p>
           <div className="img-container">
             <motion.img
