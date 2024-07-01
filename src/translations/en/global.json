@@ -15,7 +15,7 @@
   "about": {
     "title": "About Me",
     "first-text": "My goal is to use my skills and knowledge to create excellent user experiences. I'm passionate about learning new technologies and improving my existing skills by spending time on projects and online courses.",
-    "second-text": "When I'm not working, I enjoy exploring new places, going for walks, and playing tennis. These activities inspire and motivate me, positively impacting my daily work."
+    "second-text": "I enjoy exploring new places, going for walks, and playing tennis as leisure activities. These hobbies inspire and motivate me, impacting positively my daily work."
   },
   "technologies": {
     "title": "Technologies"
@@ -53,29 +53,29 @@
       "title": "'The Frontend Developer Career Path' course on Scrimba",
       "one": ": I acquired and strengthened my technical skills by completing over",
       "span1": "70 hours",
-      "two": "of frontend training and independently developing over",
-      "span2": "15 projects.",
-      "third": ""
+      "two": "of frontend training and developing over",
+      "span2": "15 projects",
+      "third": "independently."
     },
     "second-list": {
       "title": "Frontend Mentor Projects",
-      "one": ": I have completed",
+      "one": ": I have achieved",
       "span1": "48 real-life projects",
-      "two": "at the junior and newbaby levels with Frontend Mentor, in addition to developing my own projects, which have strengthened my frontend and",
+      "two": "at the junior and newbaby levels with Frontend Mentor, in addition to build my own projects which have strengthened my frontend and",
       "span2": "design skills.",
       "third": ""
     },
     "third-list": {
       "title": "Spanish teaching experience",
-      "one": ": I worked as a Spanish teacher in an academy for a year, developing",
+      "one": ": I worked as a Spanish teacher in a private language school for a year, fostering",
       "span1": "communication",
       "two": "and",
       "span2": "teamwork",
-      "third": "skills through coordination with other instructors and sharing students."
+      "third": "skills through coordination with other other fellow teachers."
     },
     "four-list": {
       "title": "Experience in Japan",
-      "one": ": I lived and worked in Japan for a year as a waiter. This experience helped me develop strong",
+      "one": ": I lived and worked in Japan for a year as a waiter. This experience helped me to promote",
       "span1": "adaptability",
       "two": ", cross-cultural understanding, and solid skills in",
       "span2": "time management",

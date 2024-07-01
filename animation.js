@@ -9,9 +9,9 @@ export const pageAnimation = {
         opacity: 1,
         y:0,
         transition: {
-            duration: 1,
+            duration: 0,
             when: "beforeChildren",
-            staggerChildren: 0.25,
+            staggerChildren: .1,
         }
     },
     exit:{
@@ -26,7 +26,7 @@ export const titleAnimation = {
     hidden: {y: 200},
     show: {
         y: 0, 
-        transition: {duration: .75, ease: "easeOut"}
+        transition: {duration: 1, ease: "easeOut"}
     }
 }
 
@@ -34,7 +34,7 @@ export const titleAnimation2 = {
     hidden: {y: 200},
     show: {
         y: 0, 
-        transition: {duration: .75, ease: "easeOut", delay:.3}
+        transition: {duration: 1, ease: "easeOut"}
     }
 }
 
@@ -44,7 +44,7 @@ export const photoAni = {
     show: {
         scale: 1,
         opacity: 1,
-        transition: {ease: "easeOut", duration: 0.75, delay:.7 }
+        transition: {ease: "easeOut", duration: 1, delay:.1 }
     }
 }
 
